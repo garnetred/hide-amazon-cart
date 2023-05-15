@@ -1,0 +1,8 @@
+#nav-flyout-ewc {
+  display: none !important;
+}
+
+body {
+  width: 100vw;
+  padding-right: 0;
+}
