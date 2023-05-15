@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Hide Amazon Cart",
+  "version": "0.0.1",
+  "description": "Hide the Amazon cart sidebar while browsing on Amazon",
+   "permissions": ["scripting"],
+  "icons": {
+    "16": "images/cart-16.png",
+    "32": "images/cart-32.png",
+    "48": "images/cart-48.png",
+    "128": "images/cart-128.png"
+},
+"background": {
+    "service_worker": "scripts/background.js"
+},
+"web_accessible_resources": [
+  {
+    "resources": ["css/*.css"],
+    "extension_ids": [
+      "jijclebhnnihgcgjabjgcdbapeccoodc"
+    ]
+    }
+  ],
+"content_scripts": [
+    {
+        "matches": [
+        "*://www.amazon.com/*"
+      ],
+      "css": ["css/global.css"]
+    }
+],
+  "host_permissions": [
+    "*://www.amazon.com/*"  ],
+  "action": {
+      "default_popup": "popup.html"
+  }
+
+}
