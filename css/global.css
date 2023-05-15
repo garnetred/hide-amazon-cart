@@ -3,6 +3,6 @@
 }
 
 body {
-  width: 100vw;
-  padding-right: 0;
+  width: 100vw !important;
+  padding-right: 0 !important;
 }
