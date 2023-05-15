@@ -3,20 +3,11 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
   if (
     changeInfo.status === 'complete' &&
     tabUrl &&
-    tabUrl.includes('linkedin.com/feed')
+    tabUrl.includes('amazon.com')
   ) {
     chrome.scripting.insertCSS({
       target: { tabId: tabId },
-      files: ['css/feed.css'],
-    });
-  } else if (
-    changeInfo.status === 'complete' &&
-    tabUrl &&
-    tabUrl.includes('linkedin.com/news')
-  ) {
-    chrome.scripting.insertCSS({
-      target: { tabId: tabId },
-      files: ['css/news.css'],
+      files: ['css/global.css'],
     });
   }
 });
