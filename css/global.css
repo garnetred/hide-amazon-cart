@@ -1,8 +1,8 @@
-#nav-flyout-ewc {
+#nav-flyout-ewc,
+.nav-ewc-arrow {
   display: none !important;
 }
 
 body {
-  width: 100vw !important;
   padding-right: 0 !important;
 }
