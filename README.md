@@ -1,5 +1,8 @@
 # Hide Amazon Cart
 
+## Chrome Web Store
+This extension is now publicly available via the [Chrome Web Store](https://chrome.google.com/webstore/detail/hide-amazon-cart/ajpehjilbkljgjkdjlooccaopmfgcpeb). 
+
 ## Abstract
 This browser extension hides the Amazon cart sidebar that appears on the right-hand side if a user has at least one item in the cart. Normally, you would see this sidebar on the `/cart` route and when viewing other Amazon items. With this extension the cart is hidden, but you can still view your cart by visiting `amazon.com/cart`. 
 
