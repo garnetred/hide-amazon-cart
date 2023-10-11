@@ -1,10 +1,9 @@
 # Hide Amazon Cart
 
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/decemberthedeveloper)
+
 ## Chrome Web Store
 This extension is now publicly available via the [Chrome Web Store](https://chrome.google.com/webstore/detail/hide-amazon-cart/ajpehjilbkljgjkdjlooccaopmfgcpeb). 
-
-## Donate 
-You can support this extension by [buying me a coffee](https://www.buymeacoffee.com/decemberthedeveloper) to help me continue to make free, user-friendly browser extensions.
 
 ## Abstract
 This browser extension hides the Amazon cart sidebar that appears on the right-hand side if a user has at least one item in the cart. Normally, you would see this sidebar on the `/cart` route and when viewing other Amazon items. With this extension the cart is hidden, but you can still view your cart by visiting `amazon.com/cart`. 
