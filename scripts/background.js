@@ -3,13 +3,13 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
   if (
     (changeInfo.status === 'complete' &&
       tabUrl &&
-      tabUrl.includes('amazon.de')) || //validated
-    tabUrl.includes('amazon.es') || //validated
-    tabUrl.includes('amazon.fr') || //validated
-    tabUrl.includes('amazon.in') || // validated
-    tabUrl.includes('amazon.it') || //validated
-    tabUrl.includes('amazon.co.uk') || // validated
-    tabUrl.includes('amazon.ca') || // validated
+      tabUrl.includes('amazon.de')) ||
+    tabUrl.includes('amazon.es') ||
+    tabUrl.includes('amazon.fr') ||
+    tabUrl.includes('amazon.in') ||
+    tabUrl.includes('amazon.it') ||
+    tabUrl.includes('amazon.co.uk') ||
+    tabUrl.includes('amazon.ca') ||
     tabUrl.includes('amazon.co.jp') ||
     tabUrl.includes('amazon.nl') ||
     tabUrl.includes('amazon.sa') ||
