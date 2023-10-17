@@ -5,12 +5,11 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
       tabUrl &&
       tabUrl.includes('amazon.de')) || //validated
     tabUrl.includes('amazon.es') || //validated
-    tabUrl.includes('amazon.fr') ||
+    tabUrl.includes('amazon.fr') || //validated
     tabUrl.includes('amazon.in') || // validated
-    tabUrl.includes('amazon.it') ||
+    tabUrl.includes('amazon.it') || //validated
     tabUrl.includes('amazon.co.uk') || // validated
     tabUrl.includes('amazon.ca') || // validated
-    tabUrl.includes('amazon.cn') ||
     tabUrl.includes('amazon.co.jp') ||
     tabUrl.includes('amazon.nl') ||
     tabUrl.includes('amazon.sa') ||
