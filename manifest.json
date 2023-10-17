@@ -1,38 +1,60 @@
 {
   "manifest_version": 3,
   "name": "Hide Amazon Cart",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Hide the Amazon cart sidebar while browsing on Amazon.",
-   "permissions": ["scripting"],
+  "permissions": ["scripting"],
   "icons": {
     "16": "images/cart-16.png",
     "32": "images/cart-32.png",
     "48": "images/cart-48.png",
     "128": "images/cart-128.png"
-},
-"background": {
+  },
+  "background": {
     "service_worker": "scripts/background.js"
-},
-"web_accessible_resources": [
-  {
-    "resources": ["css/*.css"],
-    "extension_ids": [
-      "jijclebhnnihgcgjabjgcdbapeccoodc"
-    ]
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["css/*.css"],
+      "extension_ids": ["jijclebhnnihgcgjabjgcdbapeccoodc"]
     }
   ],
-"content_scripts": [
+  "content_scripts": [
     {
-        "matches": [
-        "*://www.amazon.com/*"
+      "matches": [
+        "*://www.amazon.com/*",
+        "*://www.amazon.de/*",
+        "*://www.amazon.es/*",
+        "*://www.amazon.fr/*",
+        "*://www.amazon.in/*",
+        "*://www.amazon.it/*",
+        "*://www.amazon.co.uk/*",
+        "*://www.amazon.ca/*",
+        "*://www.amazon.co.jp/*",
+        "*://www.amazon.nl/*",
+        "*://www.amazon.sa/*",
+        "*://www.amazon.com.au/*",
+        "*://www.amazon.com.mx/*"
       ],
       "css": ["css/global.css"]
     }
-],
+  ],
   "host_permissions": [
-    "*://www.amazon.com/*"  ],
+    "*://www.amazon.com/*",
+    "*://www.amazon.de/*",
+    "*://www.amazon.es/*",
+    "*://www.amazon.fr/*",
+    "*://www.amazon.in/*",
+    "*://www.amazon.it/*",
+    "*://www.amazon.co.uk/*",
+    "*://www.amazon.ca/*",
+    "*://www.amazon.co.jp/*",
+    "*://www.amazon.nl/*",
+    "*://www.amazon.sa/*",
+    "*://www.amazon.com.au/*",
+    "*://www.amazon.com.mx/*"
+  ],
   "action": {
-      "default_popup": "popup.html"
+    "default_popup": "popup.html"
   }
-
 }
