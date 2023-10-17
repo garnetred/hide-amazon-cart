@@ -6,7 +6,22 @@
 This extension is now publicly available via the [Chrome Web Store](https://chrome.google.com/webstore/detail/hide-amazon-cart/ajpehjilbkljgjkdjlooccaopmfgcpeb). 
 
 ## Abstract
-This browser extension hides the Amazon cart sidebar that appears on the right-hand side if a user has at least one item in the cart. Normally, you would see this sidebar on the `/cart` route and when viewing other Amazon items. With this extension the cart is hidden, but you can still view your cart by visiting `amazon.com/cart`. 
+This browser extension hides the Amazon cart sidebar that appears on the right-hand side if a user has at least one item in the cart. Normally, you would see this sidebar on the `/cart` route and when viewing other Amazon items. With this extension the cart is hidden, but you can still view your cart by visiting `amazon.<top-level domain>/cart`. 
+
+The following domains are currently supported:
+- amazon.co.uk
+- amazon.it
+- amazon.co.jp
+- amazon.nl
+- amazon.sa
+- amazon.com.mx
+- amazon.com.au
+- amazon.in
+- amazon.de
+- amazon.es
+- amazon.fr
+- amazon.ca
+- amazon.com
 
 ## Tech Stack
 This project uses vanilla JS, CSS, and HTML. 
@@ -22,4 +37,4 @@ Amazon Item Page
 ![HideAmazonCart](https://github.com/garnetred/hide-amazon-cart/assets/59572865/343eacea-cc89-448d-ac4c-a85f54c19f9b)
 
 ## Next Steps
-This is a pretty simple extension so no plans to add new features other than maintaining it. 
+I hope to update this extension shortly to support a few more of the Amazon top-level domains. 
