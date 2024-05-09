@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
   "name": "Hide Amazon Cart",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Hide the Amazon cart sidebar while browsing on Amazon.",
-  "permissions": ["scripting"],
+  "permissions": ["scripting", "tabs"],
   "icons": {
     "16": "images/cart-16.png",
     "32": "images/cart-32.png",
@@ -11,14 +11,34 @@
     "128": "images/cart-128.png"
   },
   "background": {
-    "service_worker": "scripts/background.js"
+    "service_worker": "scripts/background.js",
+    "scripts": ["scripts/background.js"]
   },
   "web_accessible_resources": [
     {
       "resources": ["css/*.css"],
-      "extension_ids": ["jijclebhnnihgcgjabjgcdbapeccoodc"]
+      "matches": [
+        "*://www.amazon.com/*",
+        "*://www.amazon.de/*",
+        "*://www.amazon.es/*",
+        "*://www.amazon.fr/*",
+        "*://www.amazon.in/*",
+        "*://www.amazon.it/*",
+        "*://www.amazon.co.uk/*",
+        "*://www.amazon.ca/*",
+        "*://www.amazon.co.jp/*",
+        "*://www.amazon.nl/*",
+        "*://www.amazon.sa/*",
+        "*://www.amazon.com.au/*",
+        "*://www.amazon.com.mx/*"
+      ]
     }
   ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{c6e8018d-2121-4160-9c2f-d73ed45635d9}"
+    }
+  },
   "content_scripts": [
     {
       "matches": [
