@@ -3,7 +3,7 @@
   "name": "Hide Amazon Cart",
   "version": "0.0.5",
   "description": "Hide the Amazon cart sidebar while browsing on Amazon.",
-  "permissions": ["scripting"],
+  "permissions": ["scripting", "tabs"],
   "icons": {
     "16": "images/cart-16.png",
     "32": "images/cart-32.png",

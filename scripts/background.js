@@ -7,7 +7,7 @@ chrome.runtime.onInstalled.addListener(({ reason }) => {
   }
 });
 
-chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
   const tabUrl = tab.url ?? tab.pendingUrl;
   if (
     (changeInfo.status === 'complete' &&
@@ -26,9 +26,13 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     tabUrl.includes('amazon.com.mx') ||
     tabUrl.includes('amazon.com')
   ) {
-    chrome.scripting.insertCSS({
-      target: { tabId: tabId },
-      files: ['css/global.css'],
-    });
+    try {
+      await chrome.scripting.insertCSS({
+        target: { tabId: tabId },
+        files: ['css/global.css'],
+      });
+    } catch (err) {
+      console.error(`CSS not inserted due to this error: ${err}`);
+    }
   }
 });
