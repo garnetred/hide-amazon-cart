@@ -29,8 +29,16 @@ This project uses vanilla JS, CSS, and HTML.
 ## Setup/Installation
 You can clone the repo locally using `git clone`. 
 
+### Chrome (and other Chromium-based browsers)
+
 [This article](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked) offers detailed instructions on loading an unpacked chrome extension. You can navigate to the chrome extensions page via the puzzle piece icon in the toolbar. From there, you can click "load unpacked extension" and choose the folder via the popup. You should then see the yellow cart icon appear in the toolbar. 
+
 When you click on the icon, you should see "Hide Amazon Cart." If you navigate to Amazon and add an item to your cart, you should not see the sidebar in the `amazon.com/cart` page or on other Amazon item pages. 
+
+### Firefox
+You can navigate to `about:addons` and select the gear icon. From there, you can install the extension from a file and select the `.xpi` file in the `web-ext-artifacts` folder. There may be a popup asking about browser tab permissions, and you can click yes or accept. Then if you go to `amazon.com`, you should see the extension requesting access to the page, which you can enable.
+
+After this, when you add items to your cart you shouldn't see the sidebar. There's currently a bug where the sidebar flickers and then disappears.
 
 ## Preview
 Amazon Item Page
