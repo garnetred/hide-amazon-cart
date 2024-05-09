@@ -27,12 +27,13 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
     tabUrl.includes('amazon.com')
   ) {
     try {
+      console.log('in try block');
       await chrome.scripting.insertCSS({
         target: { tabId: tabId },
         files: ['css/global.css'],
       });
     } catch (err) {
-      console.error(`CSS not inserted due to this error: ${err}`);
+      console.error(`CSS not inserted due to this error: ${err} in ${tabUrl}`);
     }
   }
 });
