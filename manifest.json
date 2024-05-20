@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Hide Amazon Cart",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Hide the Amazon cart sidebar while browsing on Amazon.",
   "permissions": ["scripting", "tabs"],
   "icons": {
@@ -56,7 +56,8 @@
         "*://www.amazon.com.au/*",
         "*://www.amazon.com.mx/*"
       ],
-      "css": ["css/global.css"]
+      "css": ["css/global.css"],
+      "run_at": "document_start"
     }
   ],
   "host_permissions": [
