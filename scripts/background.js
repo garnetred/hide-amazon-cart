@@ -1,12 +1,3 @@
-chrome.runtime.onInstalled.addListener(({ reason }) => {
-  if (reason === 'install') {
-    chrome.tabs.create({
-      url: 'https://decemberdevelopment.com/hide-amazon-cart',
-      active: true,
-    });
-  }
-});
-
 chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
   const tabUrl = tab.url ?? tab.pendingUrl;
   if (
